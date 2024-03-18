@@ -33,3 +33,5 @@ services:
       retries: 5
     ports:
       - "33060:3306"
+    volumes:
+      - ./spiderstore-script.sql:/docker-entrypoint-initdb.d/spiderstore-script.sql
