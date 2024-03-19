@@ -2,7 +2,7 @@ import express, {Request, Response} from "express"
 require('dotenv').config() // eslint-disable-line
 
 const app = express()
-const port: string | undefined = process.env.PORT
+const port: string | undefined = process.env.API_PORT
   
 app.get("/", (req: Request, res: Response) => {
   res.send("test")
